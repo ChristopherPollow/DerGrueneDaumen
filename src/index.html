@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Der Grüne</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    a {
+        text-decoration: none;
+        color: #e85f2a;
+    }
+</style>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="header-dropdown" style="display: none">
+                <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+            </div>
+        </div>
+    </header>
+    <div class="logo-container" id="anchor-10">
+        <div class="logo-box">
+            <h1 class="logo-text-head">Der Grüne</h1>
+            <img class="logo-icon" src="../imges/thumbs-up.png" alt="Green Thump">
+            <div class="fill-1-circle"></div>
+            <div class="fill-2-triangle"></div>
+            <div class="fill-1"></div>
+            <div class="fill-6-point"></div>
+        </div>
+    </div>
+    <nav class="nav-wrapper">
+        <ul class="nav-container" style="list-style-type: none">
+            <div class="nav-box, nav-box-link1 underline-hover"><li><a href="#anchor-1">Home</a></li></div>
+            <div class="nav-box, nav-box-link2 underline-hover"><li><a href="#anchor-2">Team</a></li></div>
+            <div class="nav-box, nav-box-link3 underline-hover"><li><a href="#anchor-3">Gärtnerei</a></li></div>
+            <div class="nav-box, nav-box-link4 underline-hover"><li><a href="#anchor-4">Landschaftgärtner</a></li></div>
+            <div class="nav-box, nav-box-link5 underline-hover"><li><a href="#anchor-5">Floristik</a></li></div>
+            <div class="nav-box, nav-box-link6 underline-hover"><li><a href="#anchor-6">Grabbetreuung</a></li></div>
+            <div class="nav-box, nav-box-link8 underline-hover"><li><a href=".././pages/contact02/index.html">Kontakt</a></li></div>
+            <div class="nav-box, nav-box-link9 underline-hover"><li><a href="#anchor-9">Impressum</a></li></div>
+            <div class="nav-box, nav-box-link10 underline-hover"><li><a href="#anchor-11">Social Media</a></li></div>
+        </ul>
+    </nav>
+    <div class="nav-wrapper">
+        <div class="nav-container">
+            <div class="nav-box">
+                <ul class="nav-container hover-container" style="list-style-type: none">
+                    <div class="nav-box, nav-box-link7"><li><a href=".././gallery/src/index.html"><p class="gallery-side btn-hover">Galerie</p></a></li></div>
+                </ul>
+            </div>
+            <div>
+                <h2 style="color: #e85f2a">Flächenrechner</h2>
+                <label for="area">Fläche (in Quadratmetern):</label>
+                <input type="number" id="area" name="area">
+                <label for="price">Grundpreis pro Quadratmeter:</label>
+                <input type="number" id="price" name="price">
+                <button onclick="calculateCost()">Berechnen</button>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section-box-wrapper">
+        <div class="section-box-container">
+            <img class="image-box" src="../imges/flowershop01.jpg" alt="Zen Garden">
+        </div>
+        <section id="anchor-1">
+            <div class="text-box-wrapper">
+                <div class="text-box-container">
+                    <div class="text-box">
+                        <h1 class="content-box-head">Herzlich Willkommen beim grünen Daumen</h1>
+                        <div class="content-box">
+                            <p class="content-box-body">Willkommen bei "Der Grüne Daumen"!
+                                Herzlich willkommen bei "Der Grüne Daumen"!
+                                <br>In unserer grünen Oase findest du alles,
+                                was das Gärtnerherz begehrt.</br>
+                                Egal, ob du ein erfahrener Gärtner bist,
+                                der sein Wissen vertiefen möchte,
+                                <br>oder gerade erst in die aufregende Welt des Gärtnerns eintauchst, hier bist du richtig.</br>
+                                Unsere Seite ist eine Quelle der Inspiration,
+                                des Wissens und der Gemeinschaft für alle,
+                                <br>die sich leidenschaftlich mit Pflanzen und Gärten beschäftigen.
+                            </p>
+                            <p class="content-box-body">
+                                Unser Ziel ist es, dir zu helfen,
+                                deinen grünen Daumen zu entwickeln<br>
+                                und deine Gärten in blühende Paradiese zu verwandeln.
+                                <br>Wir bieten eine breite Palette von Ressourcen,
+                                Anleitungen und Tipps<br> zu Themen wie Pflanzenanbau, Pflege, Landschaftsgestaltung und nachhaltige Praktiken.<br>
+                                Unser Expertenteam und unsere engagierte Gemeinschaft stehen dir zur Seite,<br>
+                                um deine Fragen zu beantworten und dich bei all deinen Gartenprojekten zu unterstützen.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section-box-wrapper">
+        <div class="section-box-container">
+            <img class="image-box" src="../imges/flowershop02.jpg" alt="Zen Garden">
+        </div>
+        <section id="anchor-2">
+            <div class="text-box-wrapper">
+                <div class="text-box-container">
+                    <div class="text-box">
+                        <h1 class="content-box-head">Team</h1>
+                        <div class="content-box">
+                            <p class="content-box-body">
+                                Unser Team beim Grünen Daumen besteht aus leidenschaftlichen Gärtnern,<br>
+                                Landschaftsgestaltern und Floristen, die ihr Wissen und ihre Erfahrung gerne teilen.<br>
+                                Wir sind hier, um dir mit Rat und Tat zur Seite zu stehen,<br>
+                                sei es bei der Auswahl der richtigen Pflanzen für deinen Garten,<br>
+                                bei der Pflege von Zimmerpflanzen oder bei der Gestaltung deines Außenbereichs.<br>
+                                Jedes Mitglied unseres Teams ist bestrebt,<br>
+                                deine grünen Träume Wirklichkeit werden zu lassen und dir zu helfen,<br>
+                                deinen Garten in eine blühende Oase zu verwandeln.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section-box-wrapper">
+        <div class="section-box-container">
+            <img class="image-box" src="../imges/flowershop03.jpg" alt="Zen Garden">
+        </div>
+        <section id="anchor-3">
+            <div class="text-box-wrapper">
+                <div class="text-box-container">
+                    <div class="text-box">
+                        <h1 class="content-box-head">Gärtnerei</h1>
+                        <div class="content-box">
+                            <p class="content-box-body">
+                                Unsere Gärtnerei beim Grünen Daumen ist mehr als nur ein Ort,<br>
+                                an dem Pflanzen wachsen.
+                                Sie ist das Herzstück unserer Leidenschaft für Grün und Natur.<br>
+                                In unserer Gärtnerei kultivieren wir eine Vielzahl von Pflanzen,<br>
+                                von robusten Stauden bis hin zu exotischen Blumen.<br>
+                                Mit Sorgfalt und Fachkenntnis ziehen wir sie groß,<br> damit sie bereit sind,
+                                in deinem Garten zu gedeihen.<br>
+                                Besuche unsere Gärtnerei und lass dich von der Vielfalt
+                                und Schönheit der Pflanzenwelt inspirieren.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section-box-wrapper">
+        <div class="section-box-container">
+            <img class="image-box" src="../imges/flowershop04.jpg" alt="Zen Garden">
+        </div>
+        <section id="anchor-4">
+            <div class="text-box-wrapper">
+                <div class="text-box-container">
+                    <div class="text-box">
+                        <h1 class="content-box-head">Landschaftsgärtner</h1>
+                        <div class="content-box">
+                            <p class="content-box-body">
+                                Unsere Landschaftsgärtnerei beim Grünen Daumen ist darauf spezialisiert,<br>
+                                Außenbereiche in atemberaubende Landschaften zu verwandeln.<br>
+                                Mit einem Auge für Ästhetik und einem Verständnis für natürliche Lebensräume<br>
+                                gestalten unsere Landschaftsarchitekten Gärten,
+                                die nicht nur schön anzusehen sind,<br> sondern auch die Umwelt respektieren.<br>
+                                Wir verwenden nachhaltige Praktiken und natürliche Materialien,<br>
+                                um harmonische Außenräume zu schaffen, die Mensch und Natur verbinden.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section-box-wrapper">
+        <div class="section-box-container">
+            <img class="image-box" src="../imges/flowershop05.jpg" alt="Zen Garden">
+        </div>
+        <section id="anchor-5">
+            <div class="text-box-wrapper">
+                <div class="text-box-container">
+                    <div class="text-box">
+                        <h1 class="content-box-head">Floristik</h1>
+                        <div class="content-box">
+                            <p class="content-box-body">
+                                Unsere Floristikabteilung beim Grünen Daumen<br>
+                                ist die Quelle für frische Blumenarrangements und kreative Dekorationen.<br>
+                                Von festlichen Sträußen bis hin zu eleganter Tischdekoration -<br>
+                                unsere Floristen zaubern mit Blumen und Pflanzen wahre Kunstwerke,<br>
+                                die jedem Anlass das gewisse Etwas verleihen.<br>
+                                Lass dich von unserer Auswahl inspirieren<br>
+                                und entdecke die Schönheit und Vielfalt der floralen Welt.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section-box-wrapper">
+        <div class="section-box-container">
+            <img class="image-box" src="../imges/flowershop06.jpg" alt="Zen Garden">
+        </div>
+        <section id="anchor-6">
+            <div class="text-box-wrapper">
+                <div class="text-box-container">
+                    <div class="text-box">
+                        <h1 class="content-box-head">Grabbetreuung</h1>
+                        <div class="content-box">
+                            <p class="content-box-body">
+                                Unsere Grabbetreuung beim Grünen Daumen ist eine einfühlsame<br>
+                                und verlässliche Unterstützung für die Pflege und Gestaltung von Grabstätten.<br>
+                                Wir verstehen die Bedeutung eines gepflegten Grabes<br>
+                                als Ort der Erinnerung und des Gedenkens.<br>
+                                Mit Respekt und Hingabe kümmern wir uns<br> um die regelmäßige Pflege von Gräbern,<br>
+                                damit sie stets würdevoll und ansprechend aussehen.<br>
+                                Unsere Grabbetreuer stehen dir einfühlsam zur Seite<br>
+                                und unterstützen dich in dieser emotionalen Aufgabe.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="bee02">🐝</div>
+    <footer>
+        <div id="anchor-11">
+            <div class="icon-wrapper">
+                <div class="icon-container">
+                    <ul class="icon-case"  style="list-style-type: none">
+                        <div class="icon-box">
+                            <li>
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <i class="fab fa-instagram" style="color: #e85f2a"></i>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="icon-box">
+                            <li>
+                                <a href="https://www.pinterest.de/" target="_blanks">
+                                    <i class="fab fa-pinterest" style="color: #e85f2a"></i>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="icon-box">
+                            <li>
+                                <a href="https://www.youtube.com" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="icon-box">
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+
+                            </li>
+                        </div>
+                        <div class="icon-box">
+                            <li>
+                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="anchor-9">
+            <div class="footer-wrapper">
+                <div class="footer-container">
+                    <div class="footer-box">
+                        <div class="footer-content-box-container">
+                            <div class="footer-content-box">
+                                <div class="impressum-container">
+                                    <div class="impressum-box, impressum-content">
+                                        <h4><strong>Impressum</strong></h4>
+                                        <p>Angaben gemäß § 5 TMG:</p>
+                                        <p><br/>Der Grüne Daumen e.V.</p><p>Musterstraße 123</p><p>12345 Berlin</p>
+                                    </div>
+                                    <div class="impressum-box, impressum-content" style="margin: 30px 0 0 0">
+                                        <p><br/><strong>Vertreten durch:</strong></p><p>Vorstandsvorsitzender: Peter Parker</p>
+                                        <p>Vorstandsmitglied: Bruce Banner</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="impressum-box, impressum-content">
+                                        <h4>Kontakt:</h4><p>Telefon: +40(0)123456789</p><p><strong>Email:</strong> info@gruenerdaumen-berlin.de</p>
+                                    </div>
+                                    <div class="impressum-box, impressum-content">
+                                        <h4>Registereintrag:</h4><p>Eintragung im Vereinsregister.</p><p>Registergericht: Amtsgericht Berlin</p>
+                                        <p>Registernummer: [Registernummer]</p>
+                                    </div>
+                                </div>
+                                <div class="impressum-container">
+                                    <div class="impressum-box, impressum-content">
+                                        <h4>Umsatzsteuer-ID:</h4><p> Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:</p>
+                                        <p>DE 123456789</p>
+                                    </div>
+                                    <div class="impressum-box, impressum-content">
+                                        <h4>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h4>
+                                        <p><br/>[Vor- und Nachname</p><p>Musterstraße 123</p><p>12345 Berlin</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <form action="mailto:you@yourwebsite.com" method="post">
+                                        <label for="name">Name:</label><br>
+                                        <input type="text" id="name" name="name"><br>
+                                        <label for="email">E-Mail-Adresse:</label><br>
+                                        <input type="email" id="email" name="email"><br>
+                                        <label for="subject">Betreff:</label><br>
+                                        <input type="text" id="subject" name="subject"><br>
+                                        <label for="message">Nachricht:</label><br>
+                                        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                                        <input type="submit" value="Senden">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-back-arrow-wrapper">
+                            <div class="footer-back-arrow-container">
+                                <div class="footer-back-arrow-box">
+                                    <a class="back-arrow-anchor" href="#anchor-10">
+                                        <p class="footer-back-arrow"></p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header-wrapper">
+            <div class="header-dropdown"></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/21e281df6b.js" crossorigin="anonymous"></script>
+</body>
+</html>
